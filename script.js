@@ -52,7 +52,7 @@ let gender = prompt("and lastly, what is your sex?");
 
 let message = `Your full name is ${firstName + lastName2}.\nYour are ${age2} years old\nAnd you are ${gender}` 
 
-if ((namee, lastName2, age2, gender)) {
+if ((firstName, lastName2, age2, gender)) {
   alert(message);
 }
 if ((!firstName, !lastName2)) {
@@ -64,3 +64,10 @@ if (!age2) {
 if (!gender) {
   alert(`you didn't answer  your sex`);
 }
+
+
+document.getElementById("name").innerHTML = firstName +" "+lastName2;
+
+document.getElementById("age").innerHTML = age2;
+
+document.getElementById("gender").innerHTML = gender;
