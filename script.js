@@ -104,8 +104,33 @@ function sum(num1, num2){
   if (num1===num2) {
     let sum = num1 + num2;
     return sum*3;
-  } else {
-    let sum = num1 + num2;
-    return sum;    
+  } else{
+    return (num1 + num2);
+  }
+}
+
+// ------------------------------------------------
+let num3 = 19;
+let num4 = parseInt(prompt('please enter a number '));
+
+function absoluteDifference(num3, num4){
+  if (num4>19){
+    return(Math.abs(num4-num3)*3);
+  }
+  else{
+    return (Math.abs(num4-num3));
+  }
+}
+
+// ------------------------------------------------
+let string1= "LO";
+let string2= String(prompt("please enter a text"));
+
+function stringAddition(string1, string2){
+  if (string2.startsWith('Lo')){
+    return string2;
+  }
+  else {
+    return (`${string1}${string2}`)
   }
 }
