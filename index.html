@@ -16,7 +16,7 @@
   <body style="background-color: rgb(253, 231, 202)">
     <p
       style="
-        margin-top: 15%;
+        margin-top: 10%;
         text-align: center;
         font-family: 'IM Fell English', serif;
         font-size: 250%;
@@ -32,15 +32,59 @@
           font-family: 'IM Fell English', serif;
           font-weight: bold;
           font-size: large;
+          border-radius: 10px;
+          width: 50%;
+          margin-left: 25%;
         "
       >
-        Your answers were: <br />
+        IF you answered before, your answers were: <br />
         Full name: <span id="name"></span> <br />
         Age: <span id="age"></span> <br />
         Gender: <span id="gender"></span> <br />
       </p>
-    </div>
+      <section
+        style="
+          border: 1px dotted brown;
+          text-align: center;
+          font-family: 'IM Fell English', serif;
+          font-weight: bold;
+          font-size: large;
+          border-radius: 10px;
+          width: 50%;
+          margin-left: 25%;
+        "
+      >
+        <!-- ---MAIN task----Basic operators, maths-------------------------
+        ---------------------------------------------------------------
+        --SUB task-----Random number task------------------------------
+        --------------------------------------------------------------- -->
 
-    <script src="script.js"></script>
+        <p>here you can get your random number</p>
+        <button
+          style="background-color: antiquewhite"
+          onclick="document.getElementById('randNum').innerHTML = rand(num1, num2)"
+        >
+          give me the random number
+        </button>
+
+        <p style="font-size: xx-large" id="randNum"></p>
+
+        <!-- --SUB task---- convert a binary number to a decimal number ---
+        --------------------------------------------------------------- -->
+        
+        <p>and here you can convert a binary number to a decimal number</p>
+
+        <button
+          style="background-color: antiquewhite"
+          onclick="document.getElementById('binaryToDecimal').innerHTML = bin2dec(binary)"
+        >
+          change to decimal a number
+        </button>
+
+        <p style="font-size: xx-large" id="binaryToDecimal"></p>
+      </section>
+    </div>
   </body>
+
+  <script src="script.js"></script>
 </html>
