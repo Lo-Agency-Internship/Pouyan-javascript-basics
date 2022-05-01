@@ -67,11 +67,11 @@
           give me the random number
         </button>
 
-        <p style="font-size: xx-large" id="randNum"></p>
+        <p style="font-size: xx-large; border-bottom: 2px solid burlywood;" id="randNum"></p>
 
         <!-- --SUB task---- convert a binary number to a decimal number ---
         --------------------------------------------------------------- -->
-        
+
         <p>and here you can convert a binary number to a decimal number</p>
 
         <button
@@ -81,25 +81,53 @@
           change to decimal a number
         </button>
 
-        <p style="font-size: xx-large" id="binaryToDecimal"></p>
+        <p style="font-size: xx-large; border-bottom: 2px solid burlywood;" id="binaryToDecimal"></p>
 
-        
-        <!-- ---MAIN task----Comparisons------------------------------------>
-        <!-- ------------------------------------------------------------ -->
+        <!-- ---MAIN task----Comparisons---------------------------------------------->
+        <!-- --------------Sum of two numbers-------------------------------------- -->
 
-        <p>and here you can have sum of two numbers and if two values are the same, triple amount of sum will be shown</p>
+        <p>
+          and here you can have sum of two numbers and if two values are the
+          same, triple amount of sum will be shown
+        </p>
 
         <button
           style="background-color: antiquewhite"
           onclick="document.getElementById('sum').innerHTML = sum(num1, num2)"
         >
-          SUM
+          SUM- if equal then *3 if not just sum
         </button>
 
-        <p style="font-size: xx-large" id="sum"></p>
+        <p style="font-size: xx-large; border-bottom: 2px solid burlywood;" id="sum"></p>
+        <!-- --------------------------------------------------------------------------------------------------------
+----------------------------difference with 19 --------------------------------------------------------->
+        <p>
+          here you can have triple absoulute difference between 19 and a number
+          of your choice above 19
+        </p>
+        <button
+          style="background-color: antiquewhite"
+          onclick="document.getElementById('absoluteDifference').innerHTML = absoluteDifference(num3, num4)"
+        >
+          Difference from 19- if greater then *3 if not just the absolute difference
+        </button>
 
+        <p style="font-size: xx-large; border-bottom: 2px solid burlywood;" id="absoluteDifference"></p>
 
+        <!-- --------------------------------------------------------------------------------------------------------
+----------------------------Add Lo in front of text or not --------------------------------------------------------->
+        <p>
+          here you can have Lo in front of your text or not if you have it
+          already
+        </p>
+        <button
+          style="background-color: antiquewhite"
+          onclick="document.getElementById('addLo').innerHTML = stringAddition(string1, string2)"
+        >
+          Add Lo for me please, if it does not already exit
+        </button>
 
+        <p style="font-size: xx-large; border-bottom: 2px solid burlywood;" id="addLo"></p>
       </section>
     </div>
   </body>
