@@ -8,7 +8,6 @@
 //   alert(`you didn't answer! WHY? WHYYYYY????`);
 // }
 
-
 // -----------VARIABLES-------------------------------------------
 // ---------------------------------------------------------------
 // let namee = prompt("What is your name?");
@@ -45,7 +44,6 @@
 
 // alert(`AND NOW YOU WITNESS MAGIC, numberOne is now=${number1} and numberTwo is now=${number2}`)
 
-
 // ------------------Data Types Part------------------------------
 // ---------------------------------------------------------------
 // let firstName = prompt("What is your name?");
@@ -53,7 +51,7 @@
 // let age2 = prompt("What is your age?");
 // let gender = prompt("and lastly, what is your sex?");
 
-// let message = `Your full name is ${firstName + lastName2}.\nYour are ${age2} years old\nAnd you are ${gender}` 
+// let message = `Your full name is ${firstName + lastName2}.\nYour are ${age2} years old\nAnd you are ${gender}`
 
 // if ((!firstName & !lastName2)) {
 //   alert(`you didn't answer your full name`);
@@ -73,7 +71,6 @@
 // document.getElementById("age").innerHTML = age2;
 
 // document.getElementById("gender").innerHTML = gender;
-
 
 // ---MAIN task----Basic operators, maths-------------------------
 // ---------------------------------------------------------------
@@ -135,72 +132,106 @@
 //   }
 // }
 
-
 // ---MAIN task---- Logical operators-----------------------------------
 // ---------------------------------------------------------------
 
-function logicalGateBuffer(){
-  if (input===true){
+function logicalGateBuffer() {
+  if (input === true) {
+    return true;
+  } else if (input === false) {
+    return false;
+  }
+}
+// ------------------------------------------------
+function logicalGateNot() {
+  if (input === true) {
+    return false;
+  } else if (input === false) {
     return true;
   }
-    else if(input===false){return false}
 }
 // ------------------------------------------------
-function logicalGateNot(){
-  if (input===true){
+function logicalGateAnd() {
+  if (input1 === true && input2 === true) {
+    return true;
+  } else {
     return false;
   }
-    else if(input===false){return true}
-  }
-// ------------------------------------------------
-function logicalGateAnd(){
-if (input1===true && input2===true){
-  return true;
-}
-  else{ return false;}
 }
 // ------------------------------------------------
-function logicalGateOr(){
-  if (input1===false && input2===false){
+function logicalGateOr() {
+  if (input1 === false && input2 === false) {
     return false;
+  } else {
+    return true;
   }
-    else{ return true;}
 }
 
 // ------------------------------------------------
-function logicalGateNand(){
-  if (input1===true && input2===true){
+function logicalGateNand() {
+  if (input1 === true && input2 === true) {
     return false;
+  } else {
+    return true;
   }
-    else{ return true;}
 }
 
 // ------------------------------------------------
-function logicalGateNor(){
-  if (input1===false && input2===false){
+function logicalGateNor() {
+  if (input1 === false && input2 === false) {
     return true;
+  } else {
+    return false;
   }
-  else{return false;}
 }
 
 // ------------------------------------------------
-function logicalGateXor(){
-  if (input1===false && input2===false){
+function logicalGateXor() {
+  if (input1 === false && input2 === false) {
     return false;
-  }
-  else if(input1===true && input2===true){
+  } else if (input1 === true && input2 === true) {
     return false;
+  } else {
+    return true;
   }
-  else{return true;}
 }
 
 // ------------------------------------------------
-function logicalGateXnor(){
-  if (input1===false && input2===false){
+function logicalGateXnor() {
+  if (input1 === false && input2 === false) {
     return true;
-  }
-  else if(input1===true && input2===true){
+  } else if (input1 === true && input2 === true) {
     return true;
+  } else {
+    return false;
   }
-  else{return false;}
 }
+
+// ---MAIN task----Loops: while and for-----------------------------------
+// ---------------------------------------------------------------
+function factorialIterative(factorialNum) {
+  let x = factorialNum;
+  if (factorialNum===0 || factorialNum === 1){return 1}
+  else if (factorialNum>1){
+    for (i=1; i<factorialNum; i++){
+      x = x*(i);
+    }
+    return x
+  }
+  
+}
+
+console.log(factorialIterative(6));
+
+// ==================================================================
+function factorialRecursive(factorialNum) {
+  if(factorialNum===0 || factorialNum === 1){
+     return 1;
+   }
+   else if (factorialNum > 1) {
+     return (factorialNum * factorialRecursive(factorialNum - 1));
+     
+   }
+ }
+ 
+ console.log(factorialRecursive(6));
