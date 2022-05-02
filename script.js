@@ -135,77 +135,72 @@
 // ---MAIN task---- Logical operators-----------------------------------
 // ---------------------------------------------------------------
 
-function logicalGateBuffer() {
-  if (input === true) {
+function logicalGateBuffer(input){
+  if (input===true){
     return true;
-  } else if (input === false) {
-    return false;
   }
+    else if(input===false){return false}
 }
 // ------------------------------------------------
-function logicalGateNot() {
-  if (input === true) {
+function logicalGateNot(input){
+  if (input===true){
     return false;
-  } else if (input === false) {
-    return true;
   }
+    else if(input===false){return true}
+  }
+// ------------------------------------------------
+function logicalGateAnd(input1, input2){
+if (input1===true && input2===true){
+  return true;
+}
+  else{ return false;}
 }
 // ------------------------------------------------
-function logicalGateAnd() {
-  if (input1 === true && input2 === true) {
-    return true;
-  } else {
+function logicalGateOr(input1, input2){
+  if (input1===false && input2===false){
     return false;
   }
-}
-// ------------------------------------------------
-function logicalGateOr() {
-  if (input1 === false && input2 === false) {
-    return false;
-  } else {
-    return true;
-  }
+    else{ return true;}
 }
 
 // ------------------------------------------------
-function logicalGateNand() {
-  if (input1 === true && input2 === true) {
+function logicalGateNand(input1, input2){
+  if (input1===true && input2===true){
     return false;
-  } else {
-    return true;
   }
+    else{ return true;}
 }
 
 // ------------------------------------------------
-function logicalGateNor() {
-  if (input1 === false && input2 === false) {
+function logicalGateNor(input1, input2){
+  if (input1===false && input2===false){
     return true;
-  } else {
-    return false;
   }
+  else{return false;}
 }
 
 // ------------------------------------------------
-function logicalGateXor() {
-  if (input1 === false && input2 === false) {
+function logicalGateXor(input1, input2){
+  if (input1===false && input2===false){
     return false;
-  } else if (input1 === true && input2 === true) {
-    return false;
-  } else {
-    return true;
   }
+  else if(input1===true && input2===true){
+    return false;
+  }
+  else{return true;}
 }
 
 // ------------------------------------------------
-function logicalGateXnor() {
-  if (input1 === false && input2 === false) {
+function logicalGateXnor(input1, input2){
+  if (input1===false && input2===false){
     return true;
-  } else if (input1 === true && input2 === true) {
-    return true;
-  } else {
-    return false;
   }
+  else if(input1===true && input2===true){
+    return true;
+  }
+  else{return false;}
 }
+
 
 // ---MAIN task----Loops: while and for-----------------------------------
 // ---------------------------------------------------------------
