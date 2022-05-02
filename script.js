@@ -139,28 +139,28 @@
 // ---MAIN task---- Logical operators-----------------------------------
 // ---------------------------------------------------------------
 
-function logicalGateBuffer(){
+function logicalGateBuffer(input){
   if (input===true){
     return true;
   }
     else if(input===false){return false}
 }
 // ------------------------------------------------
-function logicalGateNot(){
+function logicalGateNot(input){
   if (input===true){
     return false;
   }
     else if(input===false){return true}
   }
 // ------------------------------------------------
-function logicalGateAnd(){
+function logicalGateAnd(input1, input2){
 if (input1===true && input2===true){
   return true;
 }
   else{ return false;}
 }
 // ------------------------------------------------
-function logicalGateOr(){
+function logicalGateOr(input1, input2){
   if (input1===false && input2===false){
     return false;
   }
@@ -168,7 +168,7 @@ function logicalGateOr(){
 }
 
 // ------------------------------------------------
-function logicalGateNand(){
+function logicalGateNand(input1, input2){
   if (input1===true && input2===true){
     return false;
   }
@@ -176,7 +176,7 @@ function logicalGateNand(){
 }
 
 // ------------------------------------------------
-function logicalGateNor(){
+function logicalGateNor(input1, input2){
   if (input1===false && input2===false){
     return true;
   }
@@ -184,7 +184,7 @@ function logicalGateNor(){
 }
 
 // ------------------------------------------------
-function logicalGateXor(){
+function logicalGateXor(input1, input2){
   if (input1===false && input2===false){
     return false;
   }
@@ -195,7 +195,7 @@ function logicalGateXor(){
 }
 
 // ------------------------------------------------
-function logicalGateXnor(){
+function logicalGateXnor(input1, input2){
   if (input1===false && input2===false){
     return true;
   }
