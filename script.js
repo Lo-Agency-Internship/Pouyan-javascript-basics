@@ -8,7 +8,6 @@
 //   alert(`you didn't answer! WHY? WHYYYYY????`);
 // }
 
-
 // -----------VARIABLES-------------------------------------------
 // ---------------------------------------------------------------
 // let namee = prompt("What is your name?");
@@ -45,7 +44,6 @@
 
 // alert(`AND NOW YOU WITNESS MAGIC, numberOne is now=${number1} and numberTwo is now=${number2}`)
 
-
 // ------------------Data Types Part------------------------------
 // ---------------------------------------------------------------
 // let firstName = prompt("What is your name?");
@@ -53,7 +51,7 @@
 // let age2 = prompt("What is your age?");
 // let gender = prompt("and lastly, what is your sex?");
 
-// let message = `Your full name is ${firstName + lastName2}.\nYour are ${age2} years old\nAnd you are ${gender}` 
+// let message = `Your full name is ${firstName + lastName2}.\nYour are ${age2} years old\nAnd you are ${gender}`
 
 // if ((!firstName & !lastName2)) {
 //   alert(`you didn't answer your full name`);
@@ -73,7 +71,6 @@
 // document.getElementById("age").innerHTML = age2;
 
 // document.getElementById("gender").innerHTML = gender;
-
 
 // ---MAIN task----Basic operators, maths-------------------------
 // ---------------------------------------------------------------
@@ -134,7 +131,6 @@
 //     return (`${string1}${string2}`)
 //   }
 // }
-
 
 // ---MAIN task---- Logical operators-----------------------------------
 // ---------------------------------------------------------------
@@ -204,3 +200,33 @@ function logicalGateXnor(input1, input2){
   }
   else{return false;}
 }
+
+
+// ---MAIN task----Loops: while and for-----------------------------------
+// ---------------------------------------------------------------
+function factorialIterative(x) {
+  let y = x;
+  if (x===0 || x === 1){return 1}
+  else if (x>1){
+    for (i=1; i<x; i++){
+      y = y*(i);
+    }
+    return y
+  }
+  
+}
+
+console.log(factorialIterative(6));
+
+// ==================================================================
+function factorialRecursive(x) {
+  if(x===0 || x === 1){
+     return 1;
+   }
+   else if (x > 1) {
+     return (x * factorialRecursive(x - 1));
+     
+   }
+ }
+ 
+ console.log(factorialRecursive(6));
