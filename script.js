@@ -209,14 +209,14 @@ function logicalGateXnor() {
 
 // ---MAIN task----Loops: while and for-----------------------------------
 // ---------------------------------------------------------------
-function factorialIterative(factorialNum) {
-  let x = factorialNum;
-  if (factorialNum===0 || factorialNum === 1){return 1}
-  else if (factorialNum>1){
-    for (i=1; i<factorialNum; i++){
-      x = x*(i);
+function factorialIterative(x) {
+  let y = x;
+  if (x===0 || x === 1){return 1}
+  else if (x>1){
+    for (i=1; i<x; i++){
+      y = y*(i);
     }
-    return x
+    return y
   }
   
 }
@@ -224,12 +224,12 @@ function factorialIterative(factorialNum) {
 console.log(factorialIterative(6));
 
 // ==================================================================
-function factorialRecursive(factorialNum) {
-  if(factorialNum===0 || factorialNum === 1){
+function factorialRecursive(x) {
+  if(x===0 || x === 1){
      return 1;
    }
-   else if (factorialNum > 1) {
-     return (factorialNum * factorialRecursive(factorialNum - 1));
+   else if (x > 1) {
+     return (x * factorialRecursive(x - 1));
      
    }
  }
