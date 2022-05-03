@@ -76,21 +76,25 @@
 // ---------------------------------------------------------------
 // --SUB task-----Random number task------------------------------
 // ---------------------------------------------------------------
-// let num1 = prompt("give us an number");
-// num1=Number(num1);
-// let num2 = prompt("give us annother number to give you a random number between this and the last number you gave us");
-// num2=Number(num2);
-// function rand(num1, num2){
-//  return Math.floor(Math.random() * (num2-num1))+num1;
-// }
+let num1 = prompt("give us an number");
+num1=Number(num1);
+let num2 = prompt("and annother number to give you a random between them");
+num2=Number(num2);
+function rand(num1, num2){
+ return Math.floor(Math.random() * (num2-num1))+num1;
+}
+
+console.log(rand(num1, num2));
 
 // // --SUB task---- convert a binary number to a decimal number ---
 // // ---------------------------------------------------------------
-// let binary = prompt("give an binary number like 1101000 to be converted to decimal?");
+let binary = prompt("give an binary number like 1101000 to be converted to decimal?");
 
-// function bin2dec(binary){
-//   return (parseInt(binary, 2));
-// }
+function bin2dec(binary){
+  return (parseInt(binary, 2));
+}
+
+console.log(bin2dec(binary));
 
 // ---MAIN task---- Comparisons-----------------------------------
 // ---------------------------------------------------------------
