@@ -97,30 +97,33 @@
 
 // ---MAIN task---- Comparisons-----------------------------------
 // ---------------------------------------------------------------
-let num1 = parseInt(prompt('please enter the first number '));
-let num2 = parseInt(prompt('and the second number '));
+let num3 = parseInt(prompt('please enter the first number '));
+let num4 = parseInt(prompt('and the second number '));
 
-function sum(num1, num2){
-  if (num1===num2) {
-    let sum = num1 + num2;
+function sum(num3, num4){
+  if (num3===num4) {
+    let sum = num3 + num4;
     return sum*3;
   } else{
-    return (num1 + num2);
+    return (num3 + num4);
   }
 }
+
+console.log(sum(num3, num4));
 
 // ------------------------------------------------
-let num3 = 19;
-let num4 = parseInt(prompt('please enter a number '));
+let num5 = 19;
+let num6 = parseInt(prompt('please enter a number '));
 
-function absoluteDifference(num3, num4){
-  if (num4>19){
-    return(Math.abs(num4-num3)*3);
+function absoluteDifference(num5, num6){
+  if (num6>19){
+    return(Math.abs(num6-num5)*3);
   }
   else{
-    return (Math.abs(num4-num3));
+    return (Math.abs(num6-num5));
   }
 }
+console.log(absoluteDifference(num5, num6));
 
 // ------------------------------------------------
 let string1= "LO";
@@ -134,3 +137,5 @@ function stringAddition(string1, string2){
     return (`${string1}${string2}`)
   }
 }
+
+console.log(stringAddition(string1, string2));
