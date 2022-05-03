@@ -94,43 +94,48 @@
 
 // ---MAIN task---- Comparisons-----------------------------------
 // ---------------------------------------------------------------
-// let num1 = parseInt(prompt('please enter the first number '));
-// let num2 = parseInt(prompt('and the second number '));
+let num3 = parseInt(prompt('please enter the first number '));
+let num4 = parseInt(prompt('and the second number '));
 
-// function sum(num1, num2){
-//   if (num1===num2) {
-//     let sum = num1 + num2;
-//     return sum*3;
-//   } else{
-//     return (num1 + num2);
-//   }
-// }
+function sum(num3, num4){
+  if (num3===num4) {
+    let sum = num3 + num4;
+    return sum*3;
+  } else{
+    return (num3 + num4);
+  }
+}
 
-// // ------------------------------------------------
-// let num3 = 19;
-// let num4 = parseInt(prompt('please enter a number '));
+console.log(sum(num3, num4));
 
-// function absoluteDifference(num3, num4){
-//   if (num4>19){
-//     return(Math.abs(num4-num3)*3);
-//   }
-//   else{
-//     return (Math.abs(num4-num3));
-//   }
-// }
+// ------------------------------------------------
+let num5 = 19;
+let num6 = parseInt(prompt('please enter a number '));
 
-// // ------------------------------------------------
-// let string1= "LO";
-// let string2= String(prompt("please enter a text"));
+function absoluteDifference(num5, num6){
+  if (num6>19){
+    return(Math.abs(num6-num5)*3);
+  }
+  else{
+    return (Math.abs(num6-num5));
+  }
+}
+console.log(absoluteDifference(num5, num6));
 
-// function stringAddition(string1, string2){
-//   if (string2.startsWith('Lo')){
-//     return string2;
-//   }
-//   else {
-//     return (`${string1}${string2}`)
-//   }
-// }
+// ------------------------------------------------
+let string1= "LO";
+let string2= String(prompt("please enter a text"));
+
+function stringAddition(string1, string2){
+  if (string2.startsWith('Lo')){
+    return string2;
+  }
+  else {
+    return (`${string1}${string2}`)
+  }
+}
+
+console.log(stringAddition(string1, string2));
 
 // ---MAIN task---- Logical operators-----------------------------------
 // ---------------------------------------------------------------
