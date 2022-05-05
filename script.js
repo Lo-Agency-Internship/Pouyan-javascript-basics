@@ -239,3 +239,91 @@ function factorialRecursive(x) {
  }
  
  console.log(factorialRecursive(6));
+
+ 
+// ---MAIN task-----Functions-------------------------------------
+// ---------------------------------------------------------------
+
+// ---SUB task-----CUSTOM MAP-------------------------------------
+// ---------------------------------------------------------------
+// ----------------random number----------------------------
+
+function rand(numForMap1, numForMap2) {
+  return Math.floor(Math.random() * (numForMap2 - numForMap1)) + numForMap1;
+}
+
+const ArraySampleForFunctionsTask = [];
+ArraySampleForFunctionsTask.push(rand(15, 50)); //1th number
+ArraySampleForFunctionsTask.push(rand(15, 50)); //2th number
+ArraySampleForFunctionsTask.push(rand(15, 50)); //3th number
+ArraySampleForFunctionsTask.push(rand(15, 50)); //4th number
+ArraySampleForFunctionsTask.push(rand(15, 50)); //5th number
+ArraySampleForFunctionsTask.push(rand(15, 50)); //6th number
+console.log(ArraySampleForFunctionsTask);
+console.log("-----------------------");
+
+// ------------------custom map---------------------------------------
+/**
+ * @param {array} arr an array
+ * @param {Function} f the call back funtion
+ */
+function myCustomMap(arr, f) {
+  let newArrFromCustomMap = [];
+  for (let key in arr) {
+    newArrFromCustomMap.push(f(arr[key], key, arr));
+  }
+  return newArrFromCustomMap;
+}
+// -------------------TEST--------------------------------------------
+const newArrForMap = myCustomMap(ArraySampleForFunctionsTask, function (item, index) {
+  return item * index;
+});
+console.log(newArrForMap);
+
+
+// ---SUB task-----CUSTOM FILTER----------------------------------
+// ---------------------------------------------------------------
+/**
+ * @param {array} arr an array
+ * @param {Function} f the call back funtion
+ */
+ function myCustomFilter(arr, f) {
+  let newArrFromCustomFilter = [];
+  for (let key in arr) {
+    if (f(arr[key]) === true){
+      newArrFromCustomFilter.push(arr[key]);
+  }
+  }
+  return newArrFromCustomFilter;
+}
+// -------------------TEST--------------------------------------------
+const newArrForFilter = myCustomFilter(ArraySampleForFunctionsTask, function (item) {
+  if (item>40){return true}
+});
+console.log(newArrForFilter);
+
+
+  // ---SUB task-----CUSTOM REDUCE----------------------------------
+  // ---------------------------------------------------------------
+  
+  // -----------------------------------------------------------------
+  /**
+   * @param {array} arr an array
+   * @param {Function} f the call back funtion
+   */
+   function myCustomReduce(arr, f) {
+    let accumulator = arr;
+    accumulator = 0;
+    for (let key in arr) {
+      accumulator = f(accumulator, arr[key]);
+    }
+    return accumulator;
+  }
+  
+  // -------------------TEST--------------------------------------------
+  const result = myCustomReduce(ArraySampleForFunctionsTask, function (accumulator, currentValue) {
+      return accumulator + currentValue;
+    }
+  );
+  
+  console.log(result);
