@@ -1,79 +1,79 @@
-// ----------HELLO WORLD----------------------------------------
-// ---------------------------------------------------------------
-// let question = prompt("whats will show up next?");
+// ----------HELLO WORLD---------------------------------------------------------------
+// ------------------------------------------------------------------------------------
+let question = prompt("whats will show up next?");
 
-// if (question) {
-//   alert(`Your answer: ${question} `);
-// } else {
-//   alert(`you didn't answer! WHY? WHYYYYY????`);
-// }
+if (question) {
+  alert(`Your answer: ${question} `);
+} else {
+  alert(`you didn't answer! WHY? WHYYYYY????`);
+}
 
-// -----------VARIABLES-------------------------------------------
-// ---------------------------------------------------------------
-// let namee = prompt("What is your name?");
-// let lastName = prompt("What is your last name?");
-// let age = prompt("What is your age?");
-// let sex = prompt("and lastly, what is your sex?");
+// -----------VARIABLES----------------------------------------------------------------
+// ------------------------------------------------------------------------------------
+let namee = prompt("What is your name?");
+let lastName = prompt("What is your last name?");
+let age = prompt("What is your age?");
+let sex = prompt("and lastly, what is your sex?");
 
-// if ((!namee && !lastName)) {
-//   alert(`you didn't answer your full name`);
-// }
-// if (!age) {
-//   alert(`you didn't answer  your age`);
-// }
-// if (!sex) {
-//   alert(`you didn't answer  your sex`);
-// }
-// if (namee && lastName && age && sex) {
-//   alert(`Your full name is ${namee} ${lastName} \nYour are ${age} years old\nAnd you are ${sex}`);
-// }
+if ((!namee && !lastName)) {
+  alert(`you didn't answer your full name`);
+}
+if (!age) {
+  alert(`you didn't answer  your age`);
+}
+if (!sex) {
+  alert(`you didn't answer  your sex`);
+}
+if (namee && lastName && age && sex) {
+  alert(`Your full name is ${namee} ${lastName} \nYour are ${age} years old\nAnd you are ${sex}`);
+}
 
 // --------------------------------------------------------
-// let number1 = prompt("ok, here is a little magic for you, give us a numberOne");
-// let number2 = prompt("ok, give us numberTwo");
-// if ((number1 && number2)) {
-//   alert(`your choice of numbers were, numberOne=${number1} and numberTwo=${number2}, respectively, right? now wait for it!`);
-// } else {
-//   alert("you didn't answer again! WHY WHY WHY?");
-// }
+let number1 = prompt("ok, here is a little magic for you, give us a numberOne");
+let number2 = prompt("ok, give us numberTwo");
+if ((number1 && number2)) {
+  alert(`your choice of numbers were, numberOne=${number1} and numberTwo=${number2}, respectively, right? now wait for it!`);
+} else {
+  alert("you didn't answer again! WHY WHY WHY?");
+}
 
-// let temp;
-// temp = number1;
-// number1 = number2;
-// number2 = temp;
+let temp;
+temp = number1;
+number1 = number2;
+number2 = temp;
 
-// alert(`AND NOW YOU WITNESS MAGIC, numberOne is now=${number1} and numberTwo is now=${number2}`)
+alert(`AND NOW YOU WITNESS MAGIC, numberOne is now=${number1} and numberTwo is now=${number2}`)
 
-// ------------------Data Types Part------------------------------
-// ---------------------------------------------------------------
-// let firstName = prompt("What is your name?");
-// let lastName2 = prompt("What is your last name?");
-// let age2 = prompt("What is your age?");
-// let gender = prompt("and lastly, what is your sex?");
+// ------------------Data Types Part---------------------------------------------------
+// ------------------------------------------------------------------------------------
+let firstName = prompt("What is your name?");
+let lastName2 = prompt("What is your last name?");
+let age2 = prompt("What is your age?");
+let gender = prompt("and lastly, what is your sex?");
 
-// let message = `Your full name is ${firstName + lastName2}.\nYour are ${age2} years old\nAnd you are ${gender}`
+let message = `Your full name is ${firstName + lastName2}.\nYour are ${age2} years old\nAnd you are ${gender}`
 
-// if ((!firstName & !lastName2)) {
-//   alert(`you didn't answer your full name`);
-// }
-// if (!age2) {
-//   alert(`you didn't answer  your age`);
-// }
-// if (!gender) {
-//   alert(`you didn't answer  your sex`);
-// }
-// if ((firstName & lastName2 & age2 & gender)) {
-//   alert(message);
-// }
+if ((!firstName & !lastName2)) {
+  alert(`you didn't answer your full name`);
+}
+if (!age2) {
+  alert(`you didn't answer  your age`);
+}
+if (!gender) {
+  alert(`you didn't answer  your sex`);
+}
+if ((firstName & lastName2 & age2 & gender)) {
+  alert(message);
+}
 // -----------------------------------------------------
-// document.getElementById("name").innerHTML = firstName +" "+lastName2;
+document.getElementById("name").innerHTML = firstName +" "+lastName2;
 
-// document.getElementById("age").innerHTML = age2;
+document.getElementById("age").innerHTML = age2;
 
-// document.getElementById("gender").innerHTML = gender;
+document.getElementById("gender").innerHTML = gender;
 
-// ---MAIN task----Basic operators, maths-------------------------
-// ---------------------------------------------------------------
+// ---MAIN task----Basic operators, maths----------------------------------------------
+// ------------------------------------------------------------------------------------
 // --SUB task-----Random number task------------------------------
 // ---------------------------------------------------------------
 let num1 = prompt("give us an number");
@@ -96,8 +96,8 @@ function bin2dec(binary){
 
 console.log(bin2dec(binary));
 
-// ---MAIN task---- Comparisons-----------------------------------
-// ---------------------------------------------------------------
+// ---MAIN task---- Comparisons--------------------------------------------------------
+// ------------------------------------------------------------------------------------
 let num3 = parseInt(prompt('please enter the first number '));
 let num4 = parseInt(prompt('and the second number '));
 
@@ -141,8 +141,8 @@ function stringAddition(string1, string2){
 
 console.log(stringAddition(string1, string2));
 
-// ---MAIN task---- Logical operators-----------------------------------
-// ---------------------------------------------------------------
+// ---MAIN task---- Logical operators--------------------------------------------------
+// ------------------------------------------------------------------------------------
 
 function logicalGateBuffer(input){
   if (input===true){
@@ -211,8 +211,8 @@ function logicalGateXnor(input1, input2){
 }
 
 
-// ---MAIN task----Loops: while and for-----------------------------------
-// ---------------------------------------------------------------
+// ---MAIN task----Loops: while and for------------------------------------------------
+// ------------------------------------------------------------------------------------
 function factorialIterative(x) {
   let y = x;
   if (x===0 || x === 1){return 1}
@@ -227,7 +227,7 @@ function factorialIterative(x) {
 
 console.log(factorialIterative(6));
 
-// ==================================================================
+// -----------------------------------------------------
 function factorialRecursive(x) {
   if(x===0 || x === 1){
      return 1;
@@ -241,8 +241,8 @@ function factorialRecursive(x) {
  console.log(factorialRecursive(6));
 
  
-// ---MAIN task-----Functions-------------------------------------
-// ---------------------------------------------------------------
+// ---MAIN task-----Functions----------------------------------------------------------
+// ------------------------------------------------------------------------------------
 
 // ---SUB task-----CUSTOM MAP-------------------------------------
 // ---------------------------------------------------------------
@@ -305,8 +305,6 @@ console.log(newArrForFilter);
 
   // ---SUB task-----CUSTOM REDUCE----------------------------------
   // ---------------------------------------------------------------
-  
-  // -----------------------------------------------------------------
   /**
    * @param {array} arr an array
    * @param {Function} f the call back funtion
